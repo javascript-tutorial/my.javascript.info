@@ -2,7 +2,7 @@
 
 <!-- The first thing we'll study is the building blocks of code. -->
 
-ပထမဆုံး ကျွန်တော်တို့ code အပိုင်းတွေ ဖွဲစည်းတည်ဆောက်ပုံကို လေ့လာပါမယ်။
+ပထမဆုံး ကျွန်တော်တို့ code တွေ ဘယ်လိုဖွဲ့စည်းတည်ဆောက်လည်းဆိုတာကို လေ့လာပါမယ်။
 
 ## Statements
 
@@ -29,7 +29,7 @@ alert("World");
 
 <!-- Usually, statements are written on separate lines to make the code more readable: -->
 
-ပုံမှန်အားဖြင့်တော့ statements တွေကို ဖတ်ရတာ လွယ်အောင် တစ်ကြောင်းချင်။စီ ရေးပါတယ်။
+ပုံမှန်အားဖြင့်တော့ statements တွေကို ဖတ်ရတာ လွယ်အောင် တစ်ကြောင်းချင်းစီ ရေးပါတယ်။
 
 ```js run no-beautify
 alert("Hello");
@@ -47,8 +47,8 @@ alert("World");
 ဥပမာ ဒီလိုပုံစံ မျိုးဆိုလည်း အလုပ်လုပ်ပါတယ်။
 
 ```js run no-beautify
-alert("Hello");
-alert("World");
+alert("Hello")
+alert("World")
 ```
 
 <!-- Here, JavaScript interprets the line break as an "implicit" semicolon. This is called an [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion). -->
@@ -113,7 +113,7 @@ alert("Hello")
 အဲ့ဒါက ဘာကြောင့်လည်းဆိုတော့ JavaScript က `[...]` မတိုင်ခင် semicolon ရှိတယ်လို့ မယူဆလို့ ဖြစ်ပါတယ်။ဒါကြောင့် ဥပမာ ပေးထားတဲ့ code ကို စာကြောင်းတစ်ကြောင်းတည်း အဖြစ် ယူဆပါလိမ့်မယ်။
 
 <!-- Here's how the engine sees it: -->
-Engine က ဘယ်လို မြင်မလည်းဆိုတော့
+JavaScript Engine က ဘယ်လိုမြင်လည်းဆိုတော့
 
 ```js run no-beautify
 alert("Hello")[1, 2].forEach(alert);
@@ -128,44 +128,54 @@ alert("Hello")[1, 2].forEach(alert);
 
 <!-- We recommend putting semicolons between statements even if they are separated by newlines. This rule is widely adopted by the community. Let's note once again -- *it is possible* to leave out semicolons most of the time. But it's safer -- especially for a beginner -- to use them. -->
 
-ဒါကြောင့် နောက်တစ်ကြောင်းဆင်းပြီး ရေးမယ် ဆိုတာထပ် စာကြောင်းဆုံးတိုင်းမှာ semicolon ကို ထည့်ဖို့ ကျွန်တော်တို့ recommend ပေးပါတယ်။ JS community ကလည်း အဲ့လို ရေးပုံကို လက်ခံကျင်သုံးပါတယ်။ ဒါကြောင့် နောက်တစ်ခေါက် မှတ်ထားရမှာက semicolon ကို _များသောအားဖြင့်_ ဖြုတ်ထားခဲ့နိုင်ပါတယ်။ ဒါပေမယ့် -- အထူးသဖြင့် အခုမှ စလေ့လာမယ့်သူ -- တွေအတွက်တော့ semicolon ကို စာကြောင်းဆုံးတိုင်းထည့်သင့်ပါတယ်။
+ဒါကြောင့် နောက်တစ်ကြောင်းဆင်းပြီး ရေးမယ် ဆိုတာထပ် စာကြောင်းဆုံးတိုင်းမှာ semicolon ကို ထည့်ဖို့ ကျွန်တော်တို့ recommend ပေးပါတယ်။ JS community ကလည်း အဲ့လို ရေးပုံကို လက်ခံကျင်သုံးပါတယ်။ ဒါကြောင့် နောက်တစ်ခေါက် မှတ်ထားရမှာက semicolon ကို _များသောအားဖြင့်_ ဖြုတ်ထားခဲ့နိုင်ပါတယ်။ 
+
+ဒါပေမယ့် -- အထူးသဖြင့် အခုမှ စလေ့လာမယ့်သူ -- တွေအတွက်တော့ semicolon ကို စာကြောင်းဆုံးတိုင်းထည့်သင့်ပါတယ်။
 
 <!-- ## Comments [#code-comments] -->
 
 ## Comments [#code-comments]
 
 <!-- As time goes on, programs become more and more complex. It becomes necessary to add *comments* which describe what the code does and why. -->
+တစ်ဖြည်းဖြည်း လုပ်နေရင်းနဲ့ ကိုယ်ရေးတဲ့ program ကို ပိုပိုပြီး ရှုပ်လာပါလိမ့်မယ်။ အာလိုအခြေအနေမျိုးမှာ *comments* တွေကို ထည့်ရေးပြီး အခုလက်ရှိ code က ဘယ်လိုအလုပ်လုပ်တယ် ဆိုတာနဲ့ ဘာကြောင့် ဒီ code ကို လိုအပ်တယ်ဆိုတာကို ထည့်ရေးထားလို့ရပါတယ်။
 
-Comments can be put into any place of a script. They don't affect its execution because the engine simply ignores them.
+<!-- Comments can be put into any place of a script. They don't affect its execution because the engine simply ignores them. -->
+JavaScript engine တွေက Comments တွေကို process မလုပ်ပဲ ကျော်ပစ်တာမို့လို့ Comments တွေကို script ရဲ့ ကြိုက်တဲ့နေရာမှာ ထည့်ရေးလို့ရပါတယ်။
+<br/><br/>
+<!-- **One-line comments start with two forward slash characters `//`.** -->
+**Comments လိုင်းတစ်ကြောင်းကို forward slash ၂ ခုနဲ့ စရေးလို့ရပါတယ်။ `//`.**
+<br/><br/>
+<!-- The rest of the line is a comment. It may occupy a full line of its own or follow a statement. -->
+အဲ့ဒီ forward slash ၂ ခုနောက်က စာတွေကို comment အဖြစ် သတ်မှတ်ပါတယ်။ Comment တွေကို စာကြောင်း တစ်ကြောင်းလုံးအဖြစ်လည်း ရေးလို့ရသလို script တွေရဲ့ အနောက်မှာလည်း ရေးလို့ရပါတယ်။
 
-**One-line comments start with two forward slash characters `//`.**
-
-The rest of the line is a comment. It may occupy a full line of its own or follow a statement.
-
-Like here:
+ဥပမာ:
 
 ```js run
-// This comment occupies a line of its own
+// ဒါက Comment ဖြစ်ပါတယ်။
 alert("Hello");
 
-alert("World"); // This comment follows the statement
+alert("World"); // ဒါလည်း Comment ပါပဲ။
 ```
 
-**Multiline comments start with a forward slash and an asterisk <code>/\*</code> and end with an asterisk and a forward slash <code>\*/</code>.**
+<!-- **Multiline comments start with a forward slash and an asterisk <code>/\*</code> and end with an asterisk and a forward slash <code>\*/</code>.** -->
+**တကယ်လို့ တစ်ကြောင်းထပ်ပိုတဲ့ Comments တွေကို ရေးချင်တယ်ဆိုရင်တော့ forward slash နဲ့ star လေးကို သုံးပြီး ရေးလို့ရပါတယ်။ ဥပမာ <code>/\*</code> <code>\*/</code>**
 
-Like this:
+ဥပမာ:
 
 ```js run
-/* An example with two messages.
-This is a multiline comment.
+/* ဒီ Comment မှာဆိုရင်တော့ တစ်ကြောင်းထပ်ပိုတဲ့
+အကြောင်းအရာတွေကို
+ဖော်ပြလို့ရပါတယ်။
 */
 alert("Hello");
 alert("World");
 ```
 
-The content of comments is ignored, so if we put code inside <code>/\* ... \*/</code>, it won't execute.
+Comments ထဲမှာ ရေးထားတဲ့ ဘာကို မဆို process မလုပ်တာမို့ တကယ်လို့ code တွေကို comments  <code>/\* ... \*/</code> ထဲမှာ ရေးထားရင်လည်း အဲ့ code တွေကို အလုပ်လုပ်မှာ မဟုတ်ပါဘူး။
+<!-- The content of comments is ignored, so if we put code inside <code>/\* ... \*/</code>, it won't execute. -->
 
-Sometimes it can be handy to temporarily disable a part of code:
+အဲ့လို မလုပ်တာကြောင့် တစ်ခါတစ်လေ ကိုယ်မလုပ်စေချင်တဲ့ code တွေကို comments ပိတ်ထားလိုက်လို့ရပါတယ်။
+<!-- Sometimes it can be handy to temporarily disable a part of code: -->
 
 ```js run
 /* Commenting out the code
@@ -174,14 +184,17 @@ alert('Hello');
 alert("World");
 ```
 
-```smart header="Use hotkeys!"
-In most editors, a line of code can be commented out by pressing the `key:Ctrl+/` hotkey for a single-line comment and something like `key:Ctrl+Shift+/` -- for multiline comments (select a piece of code and press the hotkey). For Mac, try `key:Cmd` instead of `key:Ctrl` and `key:Option` instead of `key:Shift`.
+```smart header="Use hotkeys! (Keyboard Shortcut လေးများ)" 
+Code editors (ဥပမာ VSCode) တို့မှာ စာကြောင်းတစ်ကြောင်း comment ပိတ်ချင်တယ်ဆိုရင် `key:Ctrl+/` ကို နှိပ်ပြီး သုံးလို့ရသလို တစ်လိုင်းထပ်ပိုတဲ့ စာကြောင်းတွေကို comments ပိတ်ချင်တယ်ဆိုရင် `key:Ctrl+Shift+/` ကို သုံးလို့ရပါတယ်။ စာကြောင်း တစ်ကြောင်းထပ်ပိုပြီး comments ပိတ်ထားချင်တယ်ဆိုရင် အရင်ဆုံး select လုပ်ပြီး ခုနက shortcut တွေကို နှိပ်ပြီး လုပ်လို့ရပါတယ်။ Mac အတွက်ဆိုရင်တော့ `key:Ctrl` အစား `key:Cmd` နဲ့ `key:Shift` အစား `key:Option` ကို သုံးလည်း ရပါတယ်။
+<!-- In most editors, a line of code can be commented out by pressing the `key:Ctrl+/` hotkey for a single-line comment and something like `key:Ctrl+Shift+/` -- for multiline comments (select a piece of code and press the hotkey). For Mac, try `key:Cmd` instead of `key:Ctrl` and `key:Option` instead of `key:Shift`. -->
 ```
 
-````warn header="Nested comments are not supported!"
-There may not be `/*...*/` inside another `/*...*/`.
+````warn header="Comments ထဲမှာ comment ထပ်ရေးတဲ့ Nested Comments တွေတော့ လုပ်လို့မရပါဘူး"
+<!-- There may not be `/*...*/` inside another `/*...*/`. -->
+ဥပမာ `/*...*/` ထဲ နောက်ထပ် `/*...*/` ကို ထပ်ရေးလို့မရပါဘူး။
 
-Such code will die with an error:
+<!-- Such code will die with an error: -->
+အောက်မှာဖော်ပြထားတဲ့ ဥပမာ ထဲကလိုဆို error တက်ပါလိမ့်မယ်။
 
 ```js run no-beautify
 /*
@@ -191,8 +204,12 @@ alert( 'World' );
 ```
 ````
 
-Please, don't hesitate to comment your code.
+<!-- Please, don't hesitate to comment your code. -->
+ကိုယ်ရဲ့ Code တွေ ဘယ်လို အလုပ်လုပ်တယ်ဆိုတဲ့ Comment တွေရေးဖို့ မကြောက်ပါနဲ့။
 
-Comments increase the overall code footprint, but that's not a problem at all. There are many tools which minify code before publishing to a production server. They remove comments, so they don't appear in the working scripts. Therefore, comments do not have negative effects on production at all.
+ကိုယ်ရဲ့ code တွေ ဘယ်လိုအလုပ်လုပ်တယ်ဆိုပြီး ရေးထားလို့ production မှာ ကိုယ် code တွေကို သူများတွေက ယူသွားလို့မရအောင် ကာကွယ်ထားလို့ရပါတယ်။ အာလို comments တွေကို production server ပေါ်မှာ မရှိအောင် လုပ်ထားလို့ရတဲ့ Tools တွေ အများကြီးရှိပါတယ်။ အဲ့တော့ Comments တွေက မကောင်းတဲ့ အကျိုးသက်ရောက်မှုမရှိပါဘူး။ အဲ့တော့ ရေးသာရေးပါ။
 
-Later in the tutorial there will be a chapter <info:code-quality> that also explains how to write better comments.
+<!-- Comments increase the overall code footprint, but that's not a problem at all. There are many tools which minify code before publishing to a production server. They remove comments, so they don't appear in the working scripts. Therefore, comments do not have negative effects on production at all. -->
+
+<!-- Later in the tutorial there will be a chapter <info:code-quality> that also explains how to write better comments. -->
+နောက်ပိုင်း သင်ခန်းစာ ဖြစ်တဲ့ <info:code-quality> အခန်းမှာ ကောင်းမွန်တဲ့ comments တွေကို ဘယ်လိုရေးရမလည်းလို့ ဖော်ပြထားပါတယ်။
