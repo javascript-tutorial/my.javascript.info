@@ -1,4 +1,4 @@
-# Manual နဲ့ သတ်မှတ်ချက်
+# အသုံးပြုပုံ နှင့် သတ်မှတ်ချက်များ
 
 <!-- # Manuals and specifications -->
 
@@ -37,7 +37,9 @@
 <!-- - **MDN (Mozilla) JavaScript Reference** is the main manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc. -->
 
 **MDN (Mozilla) JavaScript Reference** ကတော့ ဥပမာ တွေနဲ့ အခြားအချက်အလက်တွေအတွက် အဓိက ဖြစ်ပါတယ်။ language နဲ့ ပတ်သတ်တဲ့ functions တွေ methods တွေ နဲ့ ပတ်သတ်ပြီး အသေးစိတ် အချက်အလက်တွေ လေ့လာဖို့အတွက် ကောင်းတဲ့ နေရာပါပဲ။
+
 <!-- One can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>. -->
+
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference> ဒီမှာ သွားကြည့်လို့ရပါတယ်။
 
 <!-- Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for `parseInt` function. -->
