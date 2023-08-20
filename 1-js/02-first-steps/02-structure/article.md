@@ -47,8 +47,8 @@ alert("World");
 ဥပမာ ဒီလိုပုံစံ မျိုးဆိုလည်း အလုပ်လုပ်ပါတယ်။
 
 ```js run no-beautify
-alert("Hello");
-alert("World");
+alert("Hello")
+alert("World")
 ```
 
 <!-- Here, JavaScript interprets the line break as an "implicit" semicolon. This is called an [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion). -->
@@ -135,6 +135,7 @@ alert("Hello")[1, 2].forEach(alert);
 ## Comments [#code-comments]
 
 <!-- As time goes on, programs become more and more complex. It becomes necessary to add *comments* which describe what the code does and why. -->
+တစ်ဖြည်းဖြည်း လုပ်နေရင်းနဲ့ ကိုယ်ရေးတဲ့ program ကို ပိုပိုပြီး ရှုပ်လာပါလိမ့်မယ်။ အာလိုအခြေအနေမျိုးမှာ *comments* တွေကို ထည့်ရေးပြီး အခုလက်ရှိ code က ဘယ်လိုအလုပ်လုပ်တယ် ဆိုတာနဲ့ ဘာကြောင့် ဒီ code ကို လိုအပ်တယ်ဆိုတာကို ထည့်ရေးထားလို့ရပါတယ်။
 
 Comments can be put into any place of a script. They don't affect its execution because the engine simply ignores them.
 
