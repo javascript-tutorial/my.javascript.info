@@ -1,25 +1,25 @@
-# The modern mode, "use strict"
+# ခုခေတ်ပုံစံ, "use strict"
 
-For a long time, JavaScript evolved without compatibility issues. New features were added to the language while old functionality didn't change.
+JavaScript ကို ကျတော်တို့ သိပ်အမှားအယွင်းမရှိဘဲသုံးလာတာ နှစ်ပေါင်းကြာပြီဗျ။ လိုအပ်ချက်အသစ်တွေကို update လုပ်တယ်၊ အရင်ကတည်းက သုံးလာခဲ့တဲ့ ဒီလုပ်ဆောင်ချက်အဟောင်းတွေကိုလည်း ပြန်သုံးခဲ့တယ်ဗျ။
 
-That had the benefit of never breaking existing code. But the downside was that any mistake or an imperfect decision made by JavaScript's creators got stuck in the language forever.
+ဒီလိုမျိုး လုပ်ဆောင်ချက်အဟောင်းကိုလည်း မပြောင်း၊ အသစ်တွေကိုလည်း ဒီ JavaScript Language ထဲထည့်ခြင်းက ကျတော်တို့ အရင်ကတည်းက ရေးထားတဲ့ Code တွေကိုလည်း run လို့ရနေတယ်ဗျ။ ဒါပေမဲ့ ဒီ Language ကို ရေးခဲ့တဲ့ Developer တွေရဲ့ အမှား(သို့) သိပ်မသေချာတဲ့ ယူဆချက်တွေ လုပ်မိခဲ့ရင်တော့ JavaScript Language ထဲမှာ ရှိနေတယ်ဗျ။
 
-This was the case until 2009 when ECMAScript 5 (ES5) appeared. It added new features to the language and modified some of the existing ones. To keep the old code working, most such modifications are off by default. You need to explicitly enable them with a special directive: `"use strict"`.
+အပေါ်ကပြောခဲ့တဲ့ အဖြစ်အပျက်က ၂၀၀၉ မှာထပ် update လု်ခဲ့တဲ့ ECMAScript 5 မပေါ််ခင်ထိ ရှိနေခဲ့တယ်ဗျ။ ECMAScript 5 ကို အတိုကောက် ES5 ပေါ့။JavaScript ဆိုတာ ECMAScriptလို့လည်းခေါ်ကြတယ်။ တချို့ Developer တွေက (အစ်မာစခရစ်) လို့ခေါ််ကြပါတယ်။ ES5 အကြောင်းပြန်ပြောမယ်။ သူ့မှာဆို လိုအပ်ချက်အသစ်တွေနဲ့ ရှိပြီးသားတွေကိုလည်း update လုပ်ခဲ့တယ်။ အရင်က ရေးသားခဲ့ကြတဲ့ code တွေ ဆက်သုံးလို့ရနေအောင် အဲ့တုန်းက သူတို့ update လုပ်ခဲ့တဲ့ အများစုကို ပုံသေအားဖြင့် ပိတ်ထားတယ်ဗျ။ ကျတော်တို့အနေနဲ့ ဒီ language ရဲ့ feature အသစ်ကို သုံးချင်ရင် သီးသန့်ညွှန်ကြားချက်တစ်ခုနဲ့ ထည့်သွင်းအသုံးပြုဖို့ လိုအပ်တယ်ဗျ။ အဲ့ဒါကတော့ ဒီ `"use strict"` ဆိုတဲ့ directive လေးပါဗျ။
 
 ## "use strict"
 
-The directive looks like a string: `"use strict"` or `'use strict'`. When it is located at the top of a script, the whole script works the "modern" way.
+ဒီကောင်လေးက string ပုံစံနဲ့ အတူတူပါပဲ `"use strict"` (သို့) `'use strict'`။ ကျတော်တို့ script file ရဲ့ အပေါ််ဆုံးမှာ ဒါလေးရှိနေရင် အဲ့ဒီ script file တစ်ခုလုံးက update လုပ်ထားတဲ့ feature တွေကို သုံးနေတယ်လို့ ဆိုလိုပါတယ်ဗျ။
 
-For example:
+ဥပမာအနေနဲ့
 
 ```js
 "use strict";
 
-// this code works the modern way
+// ဒီ code က ခေတ်သစ်နည်းလမ်းအတိုင်း အလုပ်လုပ်ပါတယ်
 ...
 ```
 
-Quite soon we're going to learn functions (a way to group commands), so let's note in advance that `"use strict"` can be put at the beginning of a function. Doing that enables strict mode in that function only. But usually people use it for the whole script.
+မကြာခင်မှာ ကျွန်တော်တို့ functions တွေ (commands တွေကို စုစည်းတဲ့နည်းလမ်း) ကို သင်ယူတော့မှာမို့၊ အစကတည်းက သိထားရမှာက `"use strict"` ကို function တစ်ခုရဲ့ အစမှာ ထည့်သွင်းနိုင်ပါတယ်။ အဲဒီလိုလုပ်ခြင်းအားဖြင့် strict mode ကို အဲဒီ function အတွင်းမှာပဲ အသုံးပြုနိုင်ပါတယ်။ ဒါပေမယ့် လူတွေက များသောအားဖြင့် script တစ်ခုလုံးအတွက် အသုံးပြုလေ့ရှိပါတယ်။
 
 ````warn header="Ensure that \"use strict\" is at the top"
 Please make sure that `"use strict"` is at the top of your scripts, otherwise strict mode may not be enabled.
@@ -36,33 +36,34 @@ alert("some code");
 ```
 
 Only comments may appear above `"use strict"`.
-````
 
 ```warn header="There's no way to cancel `use strict`"
 There is no directive like `"no use strict"` that reverts the engine to old behavior.
 
 Once we enter strict mode, there's no going back.
 ```
+````
 
 ## Browser console
 
-When you use a [developer console](info:devtools) to run code, please note that it doesn't `use strict` by default.
+သင်က developer console ကို code ရေးဖို့အသုံးပြုတဲ့အခါ၊ သတိထားရမှာက ၎င်းက use strict ကို ပုံသေအားဖြင့် အသုံးမပြုပါဘူး။
 
-Sometimes, when `use strict` makes a difference, you'll get incorrect results.
+တစ်ခါတစ်ရံ use strict က ရလဒ်တွေကို ပြောင်းလဲစေတဲ့အခါ၊ မှားယွင်းတဲ့ရလဒ်တွေ ရနိုင်ပါတယ်။
 
-So, how to actually `use strict` in the console?
+ဒါဆို console မှာ use strict ကို တကယ်ဘယ်လိုအသုံးပြုမလဲ?
 
-First, you can try to press `key:Shift+Enter` to input multiple lines, and put `use strict` on top, like this:
+ပထမဆုံး၊ မျဉ်းစောင်းတွေထည့်ဖို့ `key:Shift+Enter` ကို နှိပ်ပြီး `"use strict"` ကို အပေါ်ဆုံးမှာ ထည့်ကြည့်နိုင်ပါတယ်၊
+ဥပမာ:
 
 ```js
 'use strict'; <Shift+Enter for a newline>
-//  ...your code
+//  ...ကျတော် တို့ code
 <Enter to run>
 ```
 
-It works in most browsers, namely Firefox and Chrome.
+၎င်းက browser အများစုမှာ အလုပ်လုပ်ပါတယ်၊ အထူးသဖြင့် Firefox နဲ့ Chrome တို့မှာပါ။
 
-If it doesn't, e.g. in an old browser, there's an ugly, but reliable way to ensure `use strict`. Put it inside this kind of wrapper:
+အကယ်၍ အလုပ်မလုပ်ဘူးဆိုရင်၊ ဥပမာ browser အဟောင်းတစ်ခုမှာ၊ use strict ကို သေချာအောင်လုပ်ဖို့ မလှပေမယ့် စိတ်ချရတဲ့နည်းလမ်းရှိပါတယ်။ ၎င်းကို ဒီလို wrapper ထဲမှာ ထည့်ပါ
 
 ```js
 (function() {
@@ -72,18 +73,18 @@ If it doesn't, e.g. in an old browser, there's an ugly, but reliable way to ensu
 })()
 ```
 
-## Should we "use strict"?
+## "use strict" ကို သုံးသင့်လား?
 
-The question may sound obvious, but it's not so.
+ဒီမေးခွန်းက ရှင်းနေသလိုထင်ရပေမယ့်၊ တကယ်တော့ မဟုတ်ပါဘူး။
 
-One could recommend to start scripts with `"use strict"`... But you know what's cool?
+တစ်ချို့က scripts တွေကို `"use strict"` နဲ့ စတင်ဖို့ အကြံပြုနိုင်ပါလိမ့်မယ်... ဒါပေမယ့် ဘာကိုကောင်းတယ်လို့ ထင်လဲ?
 
-Modern JavaScript supports "classes" and "modules" - advanced language structures (we'll surely get to them), that enable `use strict` automatically. So we don't need to add the `"use strict"` directive, if we use them.
+ခေတ်သစ် JavaScript မှာ "classes" နဲ့ "modules" တွေကို ထောက်ပံ့ပေးထားပါတယ် - ဒါတွေက ရှုပ်ထွေးတဲ့ ဘာသာစကားဖွဲ့စည်းပုံတွေဖြစ်ပြီး (ကျွန်တော်တို့ ဒါတွေကို သေချာလေ့လာမှာပါ), ၎င်းတို့က `"use strict"` ကို အလိုအလျောက် အသက်သွင်းပေးပါတယ်။ ဒါကြောင့် ကျွန်တော်တို့က `"use strict"` ညွှန်ကြားချက်ကို ထည့်စရာမလိုတော့ပါဘူး၊ အကယ်၍ ဒါတွေကို သုံးမယ်ဆိုရင်ပေါ့။
 
-**So, for now `"use strict";` is a welcome guest at the top of your scripts. Later, when your code is all in classes and modules, you may omit it.**
+**ဒါကြောင့်၊ လောလောဆယ်အနေနဲ့ `"use strict";` ကို သင့် scripts တွေရဲ့ အပေါ်ဆုံးမှာ ထည့်သွင်းဖို့ အကြံပြုပါတယ်ဗျ။ နောက်ပိုင်းမှာ၊ သင့် code တွေအားလုံးက "classes" နဲ့ "modules" တွေထဲမှာ ရောက်သွားတဲ့အခါ၊ ၎င်းကို ချန်လှပ်ထားနိုင်ပါတယ်။**
 
-As of now, we've got to know about `use strict` in general.
+လောလောဆယ်အနေနဲ့၊ ကျွန်တော်တို့က `"use strict"` အကြောင်းကို ယေဘုယျအားဖြင့် သိထားပြီးပါပြီ။
 
-In the next chapters, as we learn language features, we'll see the differences between the strict and old modes. Luckily, there aren't many and they actually make our lives better.
+နောက်အခန်းတွေမှာ၊ ဘာသာစကားရဲ့ လက္ခဏာတွေကို လေ့လာရင်း၊ strict mode နဲ့ ခေတ်ဟောင်း mode တွေကြားက ကွာခြားချက်တွေကို မြင်တွေ့ရမှာပါ။ ကံကောင်းစွာပဲ၊ ဒီကွာခြားချက်တွေက များများစားစားမရှိပါဘူး၊ ပြီးတော့ ၎င်းတို့က ကျွန်တော်တို့ရဲ့ script ကို ပိုကောင်းအောင် လုပ်ပေးပါတယ်။
 
-All examples in this tutorial assume strict mode unless (very rarely) specified otherwise.
+ဒီသင်ခန်းစာထဲက ဥပမာအားလုံးက strict mode ကို အခြေခံထားပါတယ်၊ (အလွန်ရှားပါးစွာ) ခြွင်းချက်အနေနဲ့ ဖော်ပြထားတာမဟုတ်ရင်ပေါ့။
