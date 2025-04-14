@@ -23,7 +23,7 @@ IDE တစ်ခုဟာ project files အကုန်လုံးကို loa
 တကယ်လို့ ဘယ် IDE ကို သုံးရမလည်း ဖြစ်နေရင် အောက်က IDE တွေကို သုံးကြည့်သင့်ပါတယ်။
 
 - [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [WebStorm](http://www.jetbrains.com/webstorm/) (cross-platform, paid).
+- [WebStorm](https://www.jetbrains.com/webstorm/) (cross-platform, paid).
 
 <!-- For Windows, there's also "Visual Studio", not to be confused with "Visual Studio Code". "Visual Studio" is a paid and mighty Windows-only editor, well-suited for the .NET platform. It's also good at JavaScript. There's also a free version [Visual Studio Community](https://www.visualstudio.com/vs/community/). -->
 
@@ -43,6 +43,7 @@ IDE တော်တော်များက paid version တွေဖြစ်�
 
 သူတို့ကို များသောအားဖြင့် file တစ်ခုကို ချက်ခြင်းဖွင့် ပြီး ချက်ချင်း ပြင် ဖို့အတွက် သုံးကျပါတယ်။
 
+<<<<<<< HEAD
 <!-- The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file. -->
 
 "lightweight editor" နဲ့ "IDE" မှာ အဓိက မတူတဲ့ အချက်ကတော့ IDE တွေဟာ project အဆင့်မှာ အလုပ်လုပ်ပါတယ် ဆိုလိုချင်တာက project တစ်ခုကို စ ဖွင့်လိုက်တာနဲ့ file တွေအများကြီးကို စွဲတင်ရလို့ data တွေ အများကြီးလိုပါတယ်။ ဒါအပြင် လိုအပ်လာရင် project ရဲ့ ပုံစံကို analyst လုပ်ပေးတာ စသည်ဖြင့် လုပ်ပေးပါတယ်။ lightweight editor ကတော့ file တစ်ခုတည်းကို ပဲ ပြင်ချင်တာမျိုး ဖြစ်တဲ့အတွက် ပိုပြီးတော့ မြန်ပါတယ်။
@@ -54,12 +55,18 @@ IDE တော်တော်များက paid version တွေဖြစ်�
 <!-- The following options deserve your attention: -->
 
 အောက်ဟာ lightweight editor တွေကို တစ်ချက်လေ့လာကြည့်သင့်ပါတယ်။
+=======
+There are many options, for instance:
+>>>>>>> 540d753e90789205fc6e75c502f68382c87dea9b
 
-- [Atom](https://atom.io/) (cross-platform, free).
-- [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
+- [Sublime Text](https://www.sublimetext.com/) (cross-platform, shareware).
 - [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
+<<<<<<< HEAD
 <!-- - [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them. -->
 - [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) သူတို့ကလည်း ဘယ်လိုသုံးရမလည်းဆိုတာ သိရင် တော်တော်မိုက်ပါတယ်။
+=======
+- [Vim](https://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+>>>>>>> 540d753e90789205fc6e75c502f68382c87dea9b
 
 <!-- ## Let's not argue -->
 
@@ -67,6 +74,7 @@ IDE တော်တော်များက paid version တွေဖြစ်�
 
 <!-- The editors in the lists above are those that either I or my friends whom I consider good developers have been using for a long time and are happy with. -->
 
+<<<<<<< HEAD
 အပေါ်မှာ ပေးထားတဲ့ စာရင်းတွေဟာ ကျွန်တော်နဲ့ ကျွန်တော့်သူငယ်ချင်း (ငဂျွတ်) တွေ သုံးနေတာ ကြာပါပြီ။
 
 <!-- There are other great editors in our big world. Please choose the one you like the most. -->
@@ -76,3 +84,11 @@ IDE တော်တော်များက paid version တွေဖြစ်�
 <!-- The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences. -->
 
 Editor တစ်ခုကို ရွေးချယ်ရတာလည်း တစ်ခြား tool တွေကို ရွေးရသလိုပါပဲ ၊​ တစ်ကိုယ်ရည် ကြိုက်တဲ့ feature တွေ အလေ့အကျင့် တွေ နဲ့ project တွေရဲ့ requirement တွေ​အပေါ်မှာ မူတည်ပါတယ်။
+=======
+The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
+
+The author's personal opinion:
+
+- I'd use [Visual Studio Code](https://code.visualstudio.com/) if I develop mostly frontend.
+- Otherwise, if it's mostly another language/platform and partially frontend, then consider other editors, such as XCode (Mac), Visual Studio (Windows) or Jetbrains family (Webstorm, PHPStorm, RubyMine etc, depending on the language).
+>>>>>>> 540d753e90789205fc6e75c502f68382c87dea9b
