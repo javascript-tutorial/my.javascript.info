@@ -32,7 +32,7 @@ Developer tools တွေမှာ features တွေ အများကြီ�
 <!-- It looks somewhat like this: -->
 ဒီလိုပုံစံမျိုး :
 
-![chrome](chrome.png)
+![chrome](chrome.webp)
 
 <!-- The exact look of developer tools depends on your version of Chrome. It changes from time to time but should be similar. -->
 Developer tools တွေရဲ့ ပုံစံကတော့ ကိုယ်သုံးနေတဲ့ brower version ပေါ်မူတည်ပြီး ပြောင်းနိုင်ပါတယ်။ ဒါပေမယ့် သိပ်တော့ မကွာပါဘူး။
@@ -70,8 +70,12 @@ Browsers တော်တော်များများက `key:F12` ကို
 <!-- Safari (Mac browser, not supported by Windows/Linux) is a little bit special here. We need to enable the "Develop menu" first. -->
 Safari (Mac browser, not supported by Windows/Linux) ကတော့ နည်နည်း ထူးဆန်းပါတယ်။ သူမှာ developer tool ကို သုံးဖို့ အတွက် "Develop menu" ကို အရင် ဆုံး enable လုပ်ဖို့လိုပါတယ်။
 
+<<<<<<< HEAD
 <!-- Open Preferences and go to the "Advanced" pane. There's a checkbox at the bottom: -->
 Perferences ကို ဖွင့်ပါ။ ပြီးရင် "Advanced" ကို သွားပါ။ အဲ့စာမျက်နှာရဲ့ အောက်နားမှာ checkbox တစ်ခုရှိပါတယ်။
+=======
+Open Settings and go to the "Advanced" pane. There's a checkbox at the bottom:
+>>>>>>> 51bc6d3cdc16b6eb79cb88820a58c4f037f3bf19
 
 ![safari](safari.png)
 
