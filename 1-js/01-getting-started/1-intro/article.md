@@ -55,6 +55,7 @@ Browser တွင် သူ့ရဲ့ ကိုယ်ပိုင် ထည့
 
 အပေါ်က Engine နာမည်တွေဟာ Online စာမျက်နှာတွေ မှာ မကြာမဏ တွေ့မြင်နိုင်ပြီး ကျွန်တော် တို့လည်း ကျွန်တော်တို့လည်း ရှေ့ဆက် သင်ခန်းစာများတွင် အသုံးပြုသွားပါမယ်။ ဥပမာအားဖြင့် X ဆိုသော feature ကို V8 တွင် အလုပ်လုပ်သည်ဆိုလျှင် ထို feature သည် Chrome, Opera and Edge မှာ အလုပ်လုပ်သည်ဟု ယူဆနိုင်ပါသည်။
 
+<<<<<<< HEAD
 ```smart header="Engine တွေက ဘယ်လိုအလုပ်လုပ်လည်း?"
 <!-- Engines are complicated. But the basics are easy. -->
 Engines တွေက ရှုပ်ထွေးပါတယ် ဒါပေမယ့် အခြေခံကတော့ ရိုးရှင်းပါတယ်။
@@ -64,6 +65,11 @@ Engines တွေက ရှုပ်ထွေးပါတယ် ဒါပေမ�
 1. Engine (Browser ဆိုလျှင် ကိုယ်ပိုင်ရှိပြီးသား) က Script တွေ ကို ဖတ်တယ်။
 2. ဖတ်ထားတဲ့ Script တွေကို machine langulage ကို ပြောင်းပေးတယ်။
 3. ပြောင်းထားတဲ့ machine codes တွေကို အလွန်လျင်မြန်စွာ run ပေးတယ်။
+=======
+1. The engine (embedded if it's a browser) reads ("parses") the script.
+2. Then it converts ("compiles") the script to machine code.
+3. And then the machine code runs, pretty fast.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 <!-- The engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and further optimizes the machine code based on that knowledge. -->
 Engine တွေဟာ အလုပ်လုပ်သည့် အဆင့်တိုင်းတွင် ပိုမိုကောင်းမွန်စွာ အလုပ်လုပ်ပေးပါသည်။ ထို့အပြင် Script တွေကို run နေသည့် အဆင့်တိုင်းမှာလည်း ခွဲခြမ်းစိတ်ဖြာပေးပြီး နောက်လာမယ့် machine code တွေမှာ ပိုမိုကောင်းမွန်အောင် ထိုအချက်အလက်တွေကို အသုံးပြုပါသည်။
@@ -71,7 +77,11 @@ Engine တွေဟာ အလုပ်လုပ်သည့် အဆင့်�
 
 <!-- ## What can in-browser JavaScript do? -->
 
+<<<<<<< HEAD
 ## Browser မှာပါတဲ့ JavaScript တွေက ဘာတွေလုပ်နိုင်လည်း?
+=======
+Modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or the CPU, because it was initially created for browsers which do not require it.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 <!-- Modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it. -->
 
@@ -83,7 +93,11 @@ JavaScript ရဲ့လုပ်ဆောင်နိုင်စွမ်းဟ
 
 <!-- In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver. -->
 
+<<<<<<< HEAD
 Browser မှာ ပါဝင်တဲ့ JavaScript တွေကတော့ webpage တွေဖော်ပြတာ, အသုံးပြုသူတွေ user နဲ့ webserver ကို ချိတ်ဆက်ပေးတာ စသည်ဖြင့် လုပ်ဆောင်နိုင်ပါတယ်။
+=======
+JavaScript's abilities in the browser are limited to protect the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 <!-- For instance, in-browser JavaScript is able to: -->
 
@@ -91,6 +105,7 @@ Browser မှာ ပါဝင်တဲ့ JavaScript တွေကတော့ w
 
 <!-- - Add new HTML to the page, change the existing content, modify styles. -->
 
+<<<<<<< HEAD
 - Html တွေ အလုပ်လုပ်နိုင်အောင် လုပ်ဆောင်ပေးတာ ၊ ရှိနေတဲ့ content တွေကို update လုပ်ပေးတာ ၊ Styles တွေ ချိန်းပေးတာ
 <!-- - React to user actions, run on mouse clicks, pointer movements, key presses. -->
 - User actions တွေကို လုပ်ဆောင်ပေးတာ ဥပမာ mouse clicks, pointer movements, key pressess
@@ -150,6 +165,19 @@ Browser မှာ အလုပ်လုပ်တဲ့ JavaScript တွေရ�
 ![](limitations.svg)
 
 <!-- Such limits do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugin/extensions which may ask for extended permissions. -->
+=======
+    There are ways to interact with the camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
+- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other page if they come from different sites (from a different domain, protocol or port).
+
+    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and must contain special JavaScript code that handles it. We'll cover that in the tutorial.
+
+    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com`, for example, and steal information from there.
+- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
+
+![](limitations.svg)
+
+Such limitations do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugins/extensions which may ask for extended permissions.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 တကယ်လို့သာ JavaScript ကို Browser မှာ မဟုတ်ပဲ တစ်ခြားနေရာမှာ သုံးမယဆိုရင် အဲ့လို ကန့်သတ်ချက်တွေ မရှိပါဘူး။ ဥပမာ Server ပေါ်မှာ ဆိုရင်ပေါ့။ နောက်ပိုင်း Browser တွေကတော့ plugin/extensions တွေကို ထပ်တိုး permissions တွေတောင်းပြီး အလုပ်လုပ်နိုင်ပါတယ်။
 
@@ -172,7 +200,11 @@ JavaScript နဲ့ ပတ်သတ်ပြီး အကောင်းဆု�
 
 <!-- JavaScript is the only browser technology that combines these three things. -->
 
+<<<<<<< HEAD
 JavaScript ဟာ ထို အချက်သုံးချက်ကို Browser ပေါ်မှာ လုပ်ဆောင်နိုင်တဲ့ တစ်ခုတည်းသော နည်းပညာ ဖြစ်ပါတယ်။
+=======
+That said, JavaScript can be used to create servers, mobile applications, etc.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 <!-- That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces. -->
 
@@ -180,15 +212,30 @@ JavaScript ဟာ ထို အချက်သုံးချက်ကို Bro
 
 <!-- That said, JavaScript also allows to create servers, mobile applications, etc. -->
 
+<<<<<<< HEAD
 ဒါအပြင် JavaScript ကိုသုံးပြီး server တွေ mobile applications, စတဲ့ အရာတွေလည်း ဖန်တီးနိုင်ပါတယ်။
+=======
+So, recently a plethora of new languages appeared, which are *transpiled* (converted) to JavaScript before they run in the browser.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 <!-- ## Languages "over" JavaScript -->
 
 ## JavaScript ကို အခြေခံထားတဲ့ Languages များ
 
+<<<<<<< HEAD
 <!-- The syntax of JavaScript does not suit everyone's needs. Different people want different features. -->
 
 JavaScript ရဲ့ ရေးသားပုံတွေ က လူတိုင်းရဲ့ လိုအပ်ချက်နဲ့ တော့ မကိုက်ညီ နိုင်ပါဘူး။ မတူညီတဲ့ သူတွေမှာ မတူညီတဲ features တွေ လိုအပ်ကျပါတယ်။
+=======
+- [CoffeeScript](https://coffeescript.org/) is "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
+- [TypeScript](https://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
+- [Flow](https://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
+- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+- [Brython](https://brython.info/) is a Python transpiler to JavaScript that enables the writing of applications in pure Python without JavaScript.
+- [Kotlin](https://kotlinlang.org/docs/reference/js-overview.html) is a modern, concise and safe programming language that can target the browser or Node.
+
+There are more. Of course, even if we use one of these transpiled languages, we should also know JavaScript to really understand what we're doing.
+>>>>>>> d78b01e9833009fab534462e05c03cffc51bf0e3
 
 <!-- That's to be expected, because projects and requirements are different for everyone. -->
 
