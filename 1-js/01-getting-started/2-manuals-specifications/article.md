@@ -2,7 +2,11 @@
 
 <!-- # Manuals and specifications -->
 
+<<<<<<< HEAD
 <!-- This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other sources. -->
+=======
+This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other resources.
+>>>>>>> 725653fd99b19d42195e837ac3bb23c1784f8f6e
 
 ဒီစာအုပ်က _tutorial_ တစ်ခုဖြစ်ပါတယ်။ JavaScript ကို တစ်ဖြည်းဖြည်းချင်း လေ့လာနိုင်အောင် ရည်ရွယ်ထားတယ်။ တကယ်လို့ အခြေခံ အချက်တွေကို နားလည်သွားပြီဆိုရင် တခြား လေ့လာစရာတွေကို ထပ်လေ့လာဖို့ လိုပါလိမ့်မယ်။
 
@@ -10,7 +14,11 @@
 
 ## သတ်မှတ်ချက်
 
+<<<<<<< HEAD
 <!-- [The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) contains the most in-depth, detailed and formalized information about JavaScript. It defines the language. -->
+=======
+A new specification version is released every year. Between these releases, the latest specification draft is at <https://tc39.es/ecma262/>.
+>>>>>>> 725653fd99b19d42195e837ac3bb23c1784f8f6e
 
 [The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) ဆိုတဲ့ သတ်မှတ်ချက် တွေမှာ JavaScript နဲ့ ပတ်သတ်ပြီး အသေးစိတ် , အခြေခံကျကျ နဲ့ တိကျတဲ့ အချက်အလက်တွေ ပါဝင်ပါတယ်။
 
@@ -20,9 +28,15 @@
 
 <!-- A new specification version is released every year. In-between these releases, the latest specification draft is at <https://tc39.es/ecma262/>. -->
 
+<<<<<<< HEAD
 နှစ်စဉ်နှစ်တိုင်း သတ်မှတ်ချက် အသစ်တွေ ထွက်ပါတယ်။ အဲ့ မထွက်ခင် အတောအတွင်း သတ်မှတ်ချက်တွေကို <https://tc39.es/ecma262/> မှာ သွားကြည့်လို့ရပါတယ်။
 
 <!-- To read about new bleeding-edge features, including those that are "almost standard" (so-called "stage 3"), see proposals at <https://github.com/tc39/proposals>. -->
+=======
+    You can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
+
+Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for the `parseInt` function.
+>>>>>>> 725653fd99b19d42195e837ac3bb23c1784f8f6e
 
 အသစ်ထွက်လာမယ့် features တွေ "almost standard" (so-called "stage 3") လို့ခေါ်တဲ့ standard ဖြစ်တော့မယ့် features တွေအကြောင်းဖတ်ချင်ရင် <https://github.com/tc39/proposals> သွားဖတ်လို့ရပါတယ်။
 
@@ -30,9 +44,16 @@
 
 နောက်ပြီးတော့ တကယ်လို့ သင်ဟာ brower အတွက် ဖန်တီးနေတဲ့သူဆိုရင် browser environment တွေအတွက် သတ်မှတ်မှတ်ချက် တွေကို ဒီ tutorial ရဲ့ [second part](info:browser-environment) မှာ ပြောပြသွားပါမယ်။
 
+<<<<<<< HEAD
 <!-- ## Manuals -->
 
 ## Manual
+=======
+- <https://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <https://caniuse.com/#feat=cryptography>.
+- <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
+
+All these resources are useful in real-life development, as they contain valuable information about language details, their support, etc.
+>>>>>>> 725653fd99b19d42195e837ac3bb23c1784f8f6e
 
 <!-- - **MDN (Mozilla) JavaScript Reference** is the main manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc. -->
 
